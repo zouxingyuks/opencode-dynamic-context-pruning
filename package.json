@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
-    "name": "@tarquinen/opencode-dcp",
+    "name": "@snubisks/opencode-dcp",
     "version": "3.1.14",
     "type": "module",
     "description": "OpenCode plugin that optimizes token usage by pruning obsolete tool outputs from conversation context",
@@ -52,10 +52,13 @@
     "homepage": "https://github.com/Opencode-DCP/opencode-dynamic-context-pruning#readme",
     "author": "tarquinen",
     "license": "AGPL-3.0-or-later",
+    "publishConfig": {
+        "access": "public"
+    },
     "peerDependencies": {
         "@opencode-ai/plugin": ">=1.4.3",
-        "@opentui/core": "^0.4.2",
-        "@opentui/solid": "^0.4.2",
+        "@opentui/core": ">=0.4.2",
+        "@opentui/solid": ">=0.4.2",
         "solid-js": "^1.9.12"
     },
     "dependencies": {
@@ -65,8 +68,8 @@
     },
     "devDependencies": {
         "@opencode-ai/plugin": "^1.4.3",
-        "@opentui/core": "^0.4.2",
-        "@opentui/solid": "^0.4.2",
+        "@opentui/core": "^0.5.0",
+        "@opentui/solid": "^0.5.0",
         "@types/node": "^25.5.0",
         "prettier": "^3.8.1",
         "solid-js": "^1.9.12",

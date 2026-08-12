@@ -1,7 +1,7 @@
 # Dynamic Context Pruning Plugin
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/dansmolsky)
-[![npm version](https://img.shields.io/npm/v/@tarquinen/opencode-dcp.svg)](https://www.npmjs.com/package/@tarquinen/opencode-dcp)
+[![npm version](https://img.shields.io/npm/v/@snubisks/opencode-dcp.svg)](https://www.npmjs.com/package/@snubisks/opencode-dcp)
 
 Automatically reduces token usage in OpenCode by managing conversation context.
 
@@ -12,7 +12,7 @@ Automatically reduces token usage in OpenCode by managing conversation context.
 Install from the CLI:
 
 ```bash
-opencode plugin @tarquinen/opencode-dcp@latest --global
+opencode plugin @snubisks/opencode-dcp@latest --global
 ```
 
 This installs the package and adds it to your global OpenCode config.

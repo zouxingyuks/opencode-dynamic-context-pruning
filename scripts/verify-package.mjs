@@ -211,12 +211,13 @@ function validateRuntimeImportGraph() {
 }
 
 function validatePackedFiles() {
-    const output = execFileSync("npm", ["pack", "--dry-run", "--json"], {
+    const output = execFileSync("npm", ["pack", "--dry-run", "--json", "--ignore-scripts"], {
         cwd: root,
         encoding: "utf8",
     })
 
-    const [result] = JSON.parse(output)
+    const packResult = JSON.parse(output)
+    const result = Array.isArray(packResult) ? packResult[0] : packResult
     if (!result || !Array.isArray(result.files)) {
         fail("npm pack --dry-run --json did not return file metadata")
     }
